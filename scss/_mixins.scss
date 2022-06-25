@@ -1,0 +1,14 @@
+// Box-Sizing
+@mixin boxSize($size) {
+    @each $vendor in $vendors {
+        #{$vendor}box-sizing: $size;
+    }
+}
+
+// Typo Style
+@mixin typoStyle($font, $size: 16px, $weight: 400){
+	font-family: $font;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: 1.2;
+}

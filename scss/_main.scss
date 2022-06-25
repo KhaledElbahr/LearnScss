@@ -1,0 +1,131 @@
+* {
+    @include boxSize('border-box');
+    padding: 0;
+    margin: 0;
+}
+
+:root { font-size: $ftSize; }
+
+body {
+    color: $primaryColor;
+    font-family: $poppinsFont, $rubikFont, $openSansFont, $sergoeUIFont, $helveticaNeueFont, $ariaFont, $sanSeifFont;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 75%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $poppinsFont, $sanSeifFont;
+    color: $textColor;
+}
+
+p { color: $accentColor; }
+
+ul { list-style: none; }
+
+img {
+    max-width: 100%;
+}
+
+a {
+    @include typoStyle($poppinsFont, .88rem, 400);
+    text-decoration: none;
+    color: $linkColor;
+    
+    &:hover {
+        color: $primaryColor; 
+    }
+}
+
+.btn {
+    @include typoStyle($poppinsFont, 1rem, 700);
+    padding: .688rem 1.563rem;
+
+    &.signIn {
+        color: #173A56;
+        border: .0625rem solid #BCD0E5;
+    }
+
+    &.signUp {
+        color: $whiteColor;
+        background-color: $primaryColor;
+        border-color: $primaryColor;
+
+        &:hover {
+            background-color: #d98200;
+            border-color: #cc7a00;
+        }
+    }
+
+    &.btn-warning {
+        @include typoStyle($poppinsFont, 1rem, 700);
+        padding: 1.02rem 2.463rem;
+        color: $whiteColor;
+        background-color: $primaryColor;
+        border-radius: .25rem;
+    }
+
+    &.btn-link {
+        @include typoStyle($poppinsFont, 1rem, 400);
+        color: $primaryColor;
+    }
+}
+
+////////////////
+
+.navbar {
+    height: 75px;
+    background-color: $whiteColor;
+}
+
+.head-title {
+    @include typoStyle($poppinsFont, 2.88rem, 700);
+}
+
+.head-text {
+    @include typoStyle($poppinsFont, 1.2rem, 400);
+    color: $accentColor;
+}
+
+.services {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    .services-head { width: 60%; }
+
+    .services-head .title {
+        @include typoStyle($poppinsFont, 2.88rem, 700);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services-head { width: 100%; }
+
+    .services-head .title {
+        @include typoStyle($poppinsFont, 2.5rem, 700);
+    }
+}
+
+.img-icon {
+    width: 30%;
+}
+
+.card-icon {
+    margin-left: -1rem;
+}
+
+.card-title {
+    @include typoStyle($poppinsFont, 1.26563rem, 700);
+}
+
+.card-text {
+    @include typoStyle($poppinsFont, 1rem, 400);
+    color: $accentColor;
+}

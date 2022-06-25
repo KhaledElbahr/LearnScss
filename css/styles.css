@@ -1,0 +1,132 @@
+* {
+  -moz-box-sizing: "border-box";
+  -webkit-box-sizing: "border-box";
+  -o-box-sizing: "border-box";
+  -ms-box-sizing: "border-box";
+  box-sizing: "border-box";
+  padding: 0;
+  margin: 0; }
+
+:root {
+  font-size: 16px; }
+
+body {
+  color: #f90;
+  font-family: "Poppins", "Rubik", "Open Sans", "Segoe UI", "Helvetica Neue", "Aria", sans-serif; }
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 75%; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  color: #2F281E; }
+
+p {
+  color: #544837; }
+
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  font-family: "Poppins";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #212832; }
+  a:hover {
+    color: #f90; }
+
+.btn {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: .688rem 1.563rem; }
+  .btn.signIn {
+    color: #173A56;
+    border: .0625rem solid #BCD0E5; }
+  .btn.signUp {
+    color: #FFF;
+    background-color: #f90;
+    border-color: #f90; }
+    .btn.signUp:hover {
+      background-color: #d98200;
+      border-color: #cc7a00; }
+  .btn.btn-warning {
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 1.02rem 2.463rem;
+    color: #FFF;
+    background-color: #f90;
+    border-radius: .25rem; }
+  .btn.btn-link {
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #f90; }
+
+.navbar {
+  height: 75px;
+  background-color: #FFF; }
+
+.head-title {
+  font-family: "Poppins";
+  font-size: 2.88rem;
+  font-weight: 700;
+  line-height: 1.2; }
+
+.head-text {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #544837; }
+
+.services {
+  padding-top: 7rem;
+  padding-bottom: 10rem; }
+
+@media screen and (min-width: 992px) {
+  .services-head {
+    width: 60%; }
+  .services-head .title {
+    font-family: "Poppins";
+    font-size: 2.88rem;
+    font-weight: 700;
+    line-height: 1.2; } }
+
+@media screen and (max-width: 992px) {
+  .services-head {
+    width: 100%; }
+  .services-head .title {
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2; } }
+
+.img-icon {
+  width: 30%; }
+
+.card-icon {
+  margin-left: -1rem; }
+
+.card-title {
+  font-family: "Poppins";
+  font-size: 1.26563rem;
+  font-weight: 700;
+  line-height: 1.2; }
+
+.card-text {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #544837; }
